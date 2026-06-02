@@ -1,1 +1,81 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 · 注册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, 'Segoe UI', sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #1e1e2f;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 12px 32px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .login {
+            background-color: #667eea;
+            color: white;
+            box-shadow: 0 4px 8px rgba(102,126,234,0.3);
+        }
+        .login:hover {
+            background-color: #5a67d8;
+            transform: scale(1.02);
+        }
+        .register {
+            background-color: #48bb78;
+            color: white;
+            box-shadow: 0 4px 8px rgba(72,187,120,0.3);
+        }
+        .register:hover {
+            background-color: #38a169;
+            transform: scale(1.02);
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎</h1>
+        <div class="buttons">
+            <button class="login" onclick="alert('登录按钮被点击（无功能）')">登录</button>
+            <button class="register" onclick="alert('注册按钮被点击（无功能）')">注册</button>
+        </div>
+        <footer>仅演示按钮 · 无实际操作</footer>
+    </div>
+</body>
+</html>
